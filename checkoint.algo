@@ -1,0 +1,17 @@
+ALGORITHM task
+VAR
+   char:char;
+   w,c:INTEGER :=1;
+   v:INTEGER:=0;
+BEGIN
+   Read (char);
+
+   WHILE (char<>'.') DO
+   c=c+1;
+       if (char=' ')
+       w=w+1;
+       else if (char='A'OR char='a'OR char='e'OR char='E'OR char='u'ORchar='U'OR char='i'OR char='I'OR char='O'OR char='o'OR char='y'OR char='Y')
+       v=v+1;
+   END_WHILE
+   write ("le nombre des mots est ",w,"le nombre des caractéres est ",c,"le nombre des voyelles est ",v);
+END
